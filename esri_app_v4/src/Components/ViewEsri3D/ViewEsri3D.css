@@ -1,0 +1,150 @@
+#view3dContainer {
+  height: 100%;
+  width: 100%;
+}
+
+#sidePanel3d{
+  display:none;
+  width:350px;
+  height: calc(100% - 58px);
+  overflow-x: hidden;
+  overflow-y:auto;
+  padding:5px;
+
+}
+
+#sidePanel3d div div div .panel-heading a[aria-expanded="true"]{
+  /* background-color: #193b5e; */
+  background-color: #337ab7;
+}
+
+
+
+#sidePanel3d div div div .panel-heading a[aria-expanded="true"]::before {
+	content: none !important;
+}
+
+#sidePanel3d div div div .panel-heading a[aria-expanded="false"]::before {
+	content: none !important;
+}
+
+
+#sidePanel3d div div div .panel-heading a[aria-expanded="true"] < {
+  /* background-color: #193b5e; */
+  background-color: blue !important;
+}
+#div3d{
+  flex:1;
+  margin:0;
+}
+
+.container3d{
+  height: 100%;
+}
+
+@-moz-document url-prefix() {
+  .container3d{
+    height: 90%;
+  }
+}
+
+.modal-body.modal-body-3d{
+  height: calc(100% - 58px);
+
+}
+
+#open3dButton{
+  margin:15px;
+  display: inline-block;
+}
+
+  .container3d.open #sidePanel3d{
+
+    display:block !important;
+  }
+
+#toogle3dSidebarButton span
+{
+  cursor: pointer;
+}
+
+#open3dSidebarButton{
+  display:none;
+  position: absolute;
+  right: 37px;
+  z-index: 1;
+  margin-top: 15px;
+  font-size: 25px;
+  background: #1a93da;
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
+
+}
+
+#close3dSidebarButton{
+  display:none !important;
+}
+
+@media (max-width: 768px) {
+
+
+  .container3d.open #close3dSidebarButton{
+    display:block !important;
+    font-size: 25px;
+    background: #1a93da;
+    position: absolute;
+    padding:3px;
+    border-radius:5px;
+    color:white;
+    z-index: 1;
+  }
+
+
+.container3d.open #open3dSidebarButton{
+  display:none;
+}
+#open3dSidebarButton{
+  display: block;
+}
+
+  #sidePanel3d{
+   width: 100%;
+   diplay:none;
+ }
+  .container3d.open #sidePanel3d{
+    width: 100%;
+      display:block !important;
+  }
+}
+
+
+.container3d{
+   display: flex;
+
+}
+
+.modal-dialog.modal3d{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-content.modal3d {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;
+}
+
+
+.toc3d {
+  width:350px;
+}
+
+
+.heading3dlayer a{
+  font-size: 0.9em !important;
+  display: inline !important;
+  line-height: 2;
+}

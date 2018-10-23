@@ -1,0 +1,150 @@
+{
+  "initdata":{
+    "center": [-1.10,42],
+    "zoom":5
+  },
+  "basemap": "oceans",
+  "basemapGallery": true,
+  "homeButtom": {
+    "visible": true,
+    "position": "top-left"
+  },
+  "fullScreenButtom": {
+    "visible": true,
+    "position": "top-right"
+  },
+  "compass": {
+    "visible": true,
+    "position": "top-left"
+  },
+  "scalebar": {
+    "visible": true,
+    "position": "bottom-left"
+  },
+  "layers":[
+    {
+      "type": "TileLayer",
+      "options": {
+        "name": "MDT Mediterraneo",
+        "id": "mdt_mediterraneo",
+        "url": "http://barretosm.md.ieo.es/arcgis/rest/services/visorBase/dtm_webmedit/MapServer",
+        "opacity": 1,
+        "visible": false
+        }
+      },
+     {
+      "type": "MapImageLayer",
+      "options": {
+        "name": "cabrera",
+        "id": "cabrera",
+        "url": "http://barretosm.md.ieo.es/arcgis/rest/services/Cabrera/Cabrera/MapServer",
+        "opacity": 1,
+        "visible": true
+      }
+    },
+     {
+      "type": "MapImageLayer",
+      "options": {
+        "name": "Isóbatas Maestras",
+        "id": "isobatasMaestras",
+        "url": "http://barretosm.md.ieo.es/arcgis/rest/services/visorBase/isobatas_maestras/MapServer",
+        "opacity": 1,
+        "visible": true
+      }
+    },
+    {
+      "type": "MapImageLayer",
+      "options": {
+        "name": "Naturaleza del Fondo Marino",
+        "id": "naturalezaFondo",
+        "url": "http://barretosm.md.ieo.es/arcgis/rest/services/visorBase/Naturaleza_del_Fondo_Marino/MapServer",
+        "opacity": 1,
+        "visible": true
+      }
+    },
+     {
+      "type": "MapImageLayer",
+      "options": {
+        "name":"Regulaciones a la navegación",
+        "id":"regulacionesNavegacion",
+        "url":"http://barretosm.md.ieo.es/arcgis/rest/services/visorBase/Regulaciones_a_la_navegacion/MapServer",
+        "opacity": 1,
+        "visible": false
+      }
+    },
+     {
+      "type": "MapImageLayer",
+      "options": {
+        "name": "Usos del Medio",
+        "id": "usosMedio",
+        "url": "http://barretosm.md.ieo.es/arcgis/rest/services/visorBase/Usos_del_medio/MapServer",
+        "opacity": 1,
+        "visible": true
+      }
+    },
+    {
+      "type": "MapImageLayer",
+      "options": {
+        "name": "Figuras de Protección",
+        "id": "figurasProteccion",
+        "url": "http://barretosm.md.ieo.es/arcgis/rest/services/visorBase/Figuras_de_Proteccion/MapServer",
+        "opacity": 1,
+        "visible": false
+      }
+    },
+    {
+      "type": "MapImageLayer",
+      "options": {
+        "name": "Reservas Marinas",
+        "id": "reservasMarinas",
+        "url": "http://barretosm.md.ieo.es/arcgis/rest/services/visorBase/reservas_marinas/MapServer",
+        "popupTemplate" : {
+          "title": "people live in this census tract"
+        },
+        "opacity": 0.6,
+        "title": "Reservas Marinas",
+        "visible": true
+      }
+    },
+    {
+      "type": "MapImageLayer",
+      "options": {
+        "name": "Límites Administrativos No Oficiales",
+        "id": "limAdminNoOficiales",
+        "url": "http://barretosm.md.ieo.es/arcgis/rest/services/visorBase/limites_administrativos/MapServer",
+        "opacity": 1,
+        "visible": false
+        }
+      },
+      {
+        "type": "FeatureLayer",
+        "options": {
+          "url":"http://barretosm.md.ieo.es/arcgis/rest/services/UNESCO/CTD_NOAA_Layers/MapServer/2",
+          "id": "capapuntos",
+          "name":"CTD NOAA"
+        }
+      },
+      {
+        "type": "FeatureLayer",
+        "options": {
+          "url":"http://barretosm.md.ieo.es/arcgis/rest/services/MSFD/IEO_MSFD_DMLB/MapServer/2",
+          "id": "lbdm_sediments",
+          "name":"Contaminants in Mussel Distribution LBMD"
+        }
+      },{
+        "type": "MapImageLayer",
+        "options": {
+          "name": "Transectos",
+          "id": "transectos",
+          "url": "http://barretosm.md.ieo.es/arcgis/rest/services/El_Hierro/Visor_ElHierro_transectos/MapServer",
+          "opacity": 1,
+          "visible": true
+          }
+        }
+
+
+
+
+
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "definition":{
+    "onviewloaded": true,
+    "layers": false,
+    "id":"widget_marcadores",
+    "custom":{
+      "inPanel": true,
+      "title":{"es": "Marcadores",
+      "en": "Bookmarks"},
+      "icon":"glyphicon glyphicon-pushpin"
+    },
+    "comments": "if intoc is false, mountingnode must be entered"
+  },
+
+  "bookmarks":[
+    {
+      "center":
+      {
+        "spatialReference":
+        {
+          "latestWkid":3857,
+          "wkid":102100
+        },
+        "x":-626859.3895263304,
+        "y":4299534.135275971
+      },
+      "zoom":10,
+      "value":"Gibraltar"
+    }
+  ]
+}

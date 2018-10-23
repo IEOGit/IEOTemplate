@@ -1,0 +1,38 @@
+{
+  "labels": [
+    {
+      "id":0,
+      "es": "Tipo de gráfico",
+      "en": "Chart type"
+      },
+      {
+        "id":1,
+        "es": "Campo X",
+        "en": "X Field"
+        },
+        {
+          "id":2,
+          "es": "Campo Y",
+          "en": "Y Field"
+          },
+          {
+            "id":3,
+            "es": "Crear Gráfico",
+            "en": "Create Chart"
+            },
+            {
+              "id":4,
+              "es": "Seleccionar Gráfico",
+              "en": "Select Chart"
+              },
+              {
+                "id":5,
+                "es": "Ordernar valores",
+                "en": "Short values"
+                },
+                {
+                  "id":6,
+                  "es": "Seleccionar Campo",
+                  "en": "Select Field"
+                  }]
+}

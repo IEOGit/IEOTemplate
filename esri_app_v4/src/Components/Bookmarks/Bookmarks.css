@@ -1,0 +1,26 @@
+
+.bookmarks-glyphicon {
+  cursor: pointer;
+  margin-right: 5px;
+  float: right;
+}
+
+.bookmarksLi {
+  text-align: left;
+}
+
+.bookmarksLiInput {
+  margin-top: 10px;
+}
+
+.bookmarks {
+  padding: 10px 0px;
+}
+
+#BookmarksList {
+  list-style-type: none;
+}
+
+#BookmarksInput {
+  width: 90%;
+}

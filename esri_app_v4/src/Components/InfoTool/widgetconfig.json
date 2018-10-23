@@ -1,0 +1,70 @@
+{
+  "definition": {
+     "layers": true,
+     "onviewloaded": true,
+     "id": "widget_info",
+     "custom":{
+       "inPanel": true,
+       "icon": "glyphicon glyphicon-info-sign",
+       "title": "Info"
+     },
+     "comments": ""
+   },
+   "highligthSymbols":{
+     "comments":"Optional. There are some default symbols defined in the widget. ESRI JSON symbols must be entered",
+     "pointMarker":null,
+     "lineSymbol":null,
+     "polygonSymbol": null
+   },
+   "imageFields":[{"id_layer":"transectos","serverbasepath": "/resources/images/transectos/","fields":["Imagen","Imagen1","Imagen2"]}],
+   "labels":[
+     {
+       "id":0,
+       "es":"Activar",
+       "en":"Activate"
+     },
+     {
+       "id":1,
+       "es":"Desactivar",
+       "en":"Deactivate"
+     },
+     {
+       "id":2,
+       "es":"Sin features",
+       "en":"No features"
+     },
+     {
+       "id":3,
+       "es":"Atributo",
+       "en":"Attribute"
+     },
+     {
+       "id":4,
+       "es":"Valor",
+       "en":"Value"
+     },
+     {
+       "id":5,
+       "es":"Abrir",
+       "en":"Open"
+     },
+     {
+       "id":6,
+       "es":"Imagen no disponible",
+       "en":"Image not available"
+     },
+     {
+       "id":7,
+       "es":"Ir a",
+       "en":"Go to"
+     },
+     {
+       "id":8,
+       "es":"Auto zoom",
+       "en":"Auto zoom"
+     }
+
+   ]
+
+
+}

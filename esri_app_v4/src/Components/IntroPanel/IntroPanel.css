@@ -1,0 +1,53 @@
+
+.imgLogo {
+  content: url("./Img/LogoIEOg.jpg");
+  margin-left: 35%;
+  /* padding-top: 50px; */
+}
+
+.alink{
+  color: #1a93da;
+}
+
+.alink:hover{
+  color: #1a93da;
+}
+
+.marg-top-20px {
+  margin-top: 20px;
+}
+
+.divButtons {
+  margin-top: 20px;
+}
+
+.spanEnglish {
+  color: #aaa9a9;
+  font-style: italic;
+  display: inline !important;
+}
+
+.buttonIntroPanel {
+  background-color: #1a93da;
+  color: white;
+}
+
+.buttonIntroPanel-Right {
+  margin-left: 10px;
+}
+
+#IntropPanelTabs {
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+#IntropPanelTabs p {
+  text-align: justify;
+  margin-right: 10px;
+  color: gray;
+}
+
+.inputRecordar {
+  padding: 10px;
+  margin-right: 10px;
+}

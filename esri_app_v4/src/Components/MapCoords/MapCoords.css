@@ -1,0 +1,12 @@
+.coordY{
+  margin-left: 5px;
+}
+
+#coords{
+  height: 21px;
+  width: 350px;
+
+  left: 94px;
+  bottom: 23px;
+  position: fixed;
+}

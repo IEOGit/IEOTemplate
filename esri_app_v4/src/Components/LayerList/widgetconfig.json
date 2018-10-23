@@ -1,0 +1,203 @@
+{
+  "definition": {
+    "onviewloaded": true,
+    "layers": true,
+    "id": "widget_gestor_capas",
+    "custom": {
+      "title": {
+        "es": "Gestor de Capas",
+        "en": "Layer manager"
+      },
+      "inPanel": true,
+      "icon": "esri-icon-collection"
+    },
+    "comments": ""
+  },
+  "downloadshpservice": "http://barretosm.md.ieo.es/arcgis/rest/services/Geoprocess/servicequerytoshp/GPServer/servicequerytoshp",
+  "LayerList":[
+    {
+      "layer": "Límites Administrativos No Oficiales",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity"]
+    },
+    {
+      "sublayer": "Línea de Costa",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"]
+    },
+    {
+      "sublayer": "Línea de Base recta",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"]
+    },
+    {
+      "sublayer": "Límite de Mar Territorial (12 millas)",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"]
+    },
+    {
+      "sublayer": "Línea de Zona Contigua (24 millas)",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"]
+    },
+    {
+      "layer": "Reservas Marinas",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity"],
+      "urlInfo": "http://www.geo-ideo.ieo.es/geoportalideo/catalog/search/resource/details.page?uuid=%7B20D07549-F1BF-4573-976B-AB936B0AFE78%7D"
+    },
+    {
+      "sublayer": "Reservas Marinas (Límites)",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"],
+      "urlInfo": "http://www.geo-ideo.ieo.es/geoportalideo/catalog/search/resource/details.page?uuid=%7B20D07549-F1BF-4573-976B-AB936B0AFE78%7D"
+    },
+    {
+      "sublayer": "Reservas Marinas (Usos)",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"],
+      "urlInfo": "http://www.geo-ideo.ieo.es/geoportalideo/catalog/search/resource/details.page?uuid=%7B20D07549-F1BF-4573-976B-AB936B0AFE78%7D"
+    },
+    {
+      "layer": "Figuras de Protección",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity"]
+    },
+    {
+      "sublayer": "Directiva Habitats",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"]
+    },
+    {
+      "sublayer": "Lugares de Interés Comunitario 2000",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"]
+    },
+    {
+      "layer": "Usos del medio",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity"]
+    },
+    {
+      "sublayer": "Caladeros",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"]
+    },
+    {
+      "layer": "Arrecifes Artificiales",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity"]
+    },
+    {
+      "sublayer": "Arrecifes Artificiales (Zonas)",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"]
+    },
+    {
+      "sublayer": "Arrecifes Artificiales (Polígonos)",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"]
+    },
+    {
+      "layer": "Regulaciones a la navegación",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity"],
+      "urlInfo": "http://www.geo-ideo.ieo.es/geoportalideo/catalog/search/resource/details.page?uuid=%7B20D07549-F1BF-4573-976B-AB936B0AFE78%7D"
+    },
+    {
+      "sublayer": "Ruta de transito de Seguridad, PSSA",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"]
+    },
+    {
+      "sublayer": "Navegación Restringida, PSSA",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"]
+    },
+    {
+      "sublayer": "Zona de Especial Sensibilidad, PSSA",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"]
+    },
+    {
+      "layer": "Naturaleza del Fondo Marino",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity"],
+      "urlInfo": "http://www.geo-ideo.ieo.es/geoportalideo/catalog/search/resource/details.page?uuid=%7B20D07549-F1BF-4573-976B-AB936B0AFE78%7D"
+    },
+    {
+      "sublayer": "Naturaleza del Fondo Marino",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"]
+    },
+    {
+      "layer": "Isóbatas Maestras",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity"]
+    },
+    {
+      "sublayer": "Isóbatas Maestras",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"]
+    },
+    {
+      "layer": "Isóbatas",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity"]
+    },
+    {
+      "sublayer": "Isóbatas",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"]
+    },
+    {
+      "layer": "NOAA",
+      "actions": ["full-extent", "information", "increase-opacity", "decrease-opacity", "load-table", "generate-chart", "generate-simbology", "download-layer"]
+    }
+  ],
+  "actionsSections": {
+    "full-extent": {
+      "title": {
+        "es": "Zoom extensión de la capa",
+        "en": "Zoom to layer extension"
+      },
+      "className": "esri-icon-zoom-out-fixed"
+    },
+    "information": {
+      "title": {
+        "es": "Información de la capa",
+        "en": "Layer information"
+      },
+      "className": "esri-icon-description"
+    },
+    "increase-opacity": {
+      "title": {
+        "es": "Aumentar opacidad",
+        "en": "Opacity increase"
+      },
+      "className": "esri-icon-up"
+    },
+    "decrease-opacity": {
+      "title": {
+        "es": "Disminuir opacidad",
+        "en": "Opacity decrease"
+      },
+      "className": "esri-icon-down"
+    },
+    "load-table": {
+      "title": {
+        "es": "Cargar en tabla",
+        "en": "Load in table"
+      },
+      "className": "esri-icon-table",
+      "nonvalidtypes": ["tile", "wms"]
+    },
+    "generate-chart": {
+      "title": {
+        "es": "Generar gráfico",
+        "en": "Generate Chart"
+      },
+      "className": "esri-icon-chart",
+      "label_panel": {
+        "es": "Panel Gráficos: ",
+        "en": "Charts Panel: "
+      },
+      "nonvalidtypes": ["tile", "wms"]
+    },
+    "generate-simbology": {
+      "title": {
+        "es": "Cambiar simbología",
+        "en": "Change simbology"
+      },
+      "className": "esri-icon-map-pin",
+      "label_panel": {
+        "es": "Panel Simbología: ",
+        "en": "Simbology Panel: "
+      },
+      "nonvalidtypes": ["tile", "wms"]
+    },
+    "download-layer": {
+      "title": {
+        "es": "Descargar capa",
+        "en": "Layer download"
+      },
+      "className": "esri-icon-download",
+      "nonvalidtypes": ["tile", "wms"]
+    }
+  },
+  "comments": ""
+}

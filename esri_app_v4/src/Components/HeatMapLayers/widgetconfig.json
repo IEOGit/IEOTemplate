@@ -1,0 +1,68 @@
+{
+  "definition": {
+    "layers": true,
+    "onviewloaded": true,
+    "id": "widget_HeatMapLayers",
+    "custom": {
+      "inPanel": true,
+      "mountingnode": "",
+      "title": "HeatMap",
+      "icon": "fa fa-thermometer-three-quarters"
+    },
+    "comments": ""
+  },
+  "HeatmapConfig": {
+    "defaultRenderer": "canvas2d",
+    "defaultGradient": {
+      "0.25": "rgb(0,0,255)",
+      " 0.55": "rgb(0,255,0)",
+      "0.85": "yellow",
+      " 1.0": "rgb(255,0,0)"
+    },
+    "defaultMaxOpacity": 1,
+    "defaultMinOpacity": 0,
+    "defaultBlur": " .85",
+    "defaultXField": "x",
+    "defaultYField": "y",
+    "defaultValueField": "value",
+    "plugins": {}
+  },
+  "labels": [{
+      "id": 0,
+      "es": "FeatureService/CSV/SHP (Puntos)",
+      "en": "FeatureService/CSV/SHP (Points)"
+    },
+    {
+      "id": 1,
+      "es": "Cargar/Actualizar capa seleccionada",
+      "en": "Load/Update selected layer"
+    }, {
+      "id": 2,
+      "es": "Campo numérico",
+      "en": "Numeric Field"
+    }, {
+      "id": 3,
+      "es": "Actualizar capas disponibles",
+      "en": "Update available layers"
+    }, {
+      "id": 4,
+      "es": "Eliminar capa",
+      "en": "Delete layer"
+    },
+    {
+     "id": 5,
+     "es": "Valor mínimo",
+     "en": "Minimum value"
+   },
+   {
+    "id": 6,
+    "es": "Valor máximo",
+    "en": "Maximum value"
+  },
+  {
+   "id": 7,
+   "es": "Radio de búsqueda (Km)",
+   "en": "Serch radius (Km)"
+ }
+  ]
+}

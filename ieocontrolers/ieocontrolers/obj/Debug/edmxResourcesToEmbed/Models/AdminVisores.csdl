@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Admin_visoresModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Admin_visoresEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Projects" EntityType="Admin_visoresModel.Projects" />
+    <EntitySet Name="Roles" EntityType="Admin_visoresModel.Roles" />
+    <EntitySet Name="User_Prj_Role" EntityType="Admin_visoresModel.User_Prj_Role" />
+    <EntitySet Name="widgets" EntityType="Admin_visoresModel.widgets" />
+    <AssociationSet Name="FK_Permits_Projects" Association="Admin_visoresModel.FK_Permits_Projects">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="User_Prj_Role" EntitySet="User_Prj_Role" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Permits_Roles" Association="Admin_visoresModel.FK_Permits_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="User_Prj_Role" EntitySet="User_Prj_Role" />
+    </AssociationSet>
+    <AssociationSet Name="FK_widgets_Roles" Association="Admin_visoresModel.FK_widgets_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="widgets" EntitySet="widgets" />
+    </AssociationSet>
+    <EntitySet Name="Users" EntityType="Admin_visoresModel.Users" />
+    <AssociationSet Name="FK_Permits_Users" Association="Admin_visoresModel.FK_Permits_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="User_Prj_Role" EntitySet="User_Prj_Role" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Projects">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="project" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User_Prj_Role" Relationship="Admin_visoresModel.FK_Permits_Projects" FromRole="Projects" ToRole="User_Prj_Role" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rol" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User_Prj_Role" Relationship="Admin_visoresModel.FK_Permits_Roles" FromRole="Roles" ToRole="User_Prj_Role" />
+    <NavigationProperty Name="widgets" Relationship="Admin_visoresModel.FK_widgets_Roles" FromRole="Roles" ToRole="widgets" />
+  </EntityType>
+  <EntityType Name="User_Prj_Role">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id_user" Type="Int32" Nullable="false" />
+    <Property Name="id_project" Type="Int32" Nullable="false" />
+    <Property Name="id_rol" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Projects" Relationship="Admin_visoresModel.FK_Permits_Projects" FromRole="User_Prj_Role" ToRole="Projects" />
+    <NavigationProperty Name="Roles" Relationship="Admin_visoresModel.FK_Permits_Roles" FromRole="User_Prj_Role" ToRole="Roles" />
+    <NavigationProperty Name="Users" Relationship="Admin_visoresModel.FK_Permits_Users" FromRole="User_Prj_Role" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="widgets">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="min_role" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Roles" Relationship="Admin_visoresModel.FK_widgets_Roles" FromRole="widgets" ToRole="Roles" />
+  </EntityType>
+  <Association Name="FK_Permits_Projects">
+    <End Type="Admin_visoresModel.Projects" Role="Projects" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Admin_visoresModel.User_Prj_Role" Role="User_Prj_Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User_Prj_Role">
+        <PropertyRef Name="id_project" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Permits_Roles">
+    <End Type="Admin_visoresModel.Roles" Role="Roles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Admin_visoresModel.User_Prj_Role" Role="User_Prj_Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User_Prj_Role">
+        <PropertyRef Name="id_rol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_widgets_Roles">
+    <End Type="Admin_visoresModel.Roles" Role="Roles" Multiplicity="1" />
+    <End Type="Admin_visoresModel.widgets" Role="widgets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="widgets">
+        <PropertyRef Name="min_role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="usertoken" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="is_sa" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="User_Prj_Role" Relationship="Admin_visoresModel.FK_Permits_Users" FromRole="Users" ToRole="User_Prj_Role" />
+  </EntityType>
+  <Association Name="FK_Permits_Users">
+    <End Type="Admin_visoresModel.Users" Role="Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="Admin_visoresModel.User_Prj_Role" Role="User_Prj_Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User_Prj_Role">
+        <PropertyRef Name="id_user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

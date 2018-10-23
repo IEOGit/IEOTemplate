@@ -1,0 +1,19 @@
+{
+  "definition":{
+    "layers": true,
+    "onviewloaded": true,
+    "id":"widget_compTemplate",
+    "custom":{
+      "inPanel": true,
+      "icon": "glyphicon glyphicon-pushpin",
+      "mountingnode":"",
+      "title":""
+    },
+    "comments": ""
+  },
+  "labels":[{
+    "id": 0,
+    "es": "Etiqueta",
+    "en": "Label"
+  }]
+}

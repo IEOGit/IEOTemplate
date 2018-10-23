@@ -1,0 +1,60 @@
+{
+  "definition": {
+    "layers": true,
+    "onviewloaded": true,
+    "id": "widget_datatable",
+    "custom": {
+      "inPanel": false,
+      "mountingnode": "ddd",
+      "title": "Data Table"
+    },
+    "comments": ""
+  },
+  "downloadshpservice": "http://barretosm.md.ieo.es/arcgis/rest/services/Geoprocess/servicequerytoshp/GPServer/servicequerytoshp",
+  "highligthSymbols": {
+    "comments": "Optional. There are some default symbols defined in the widget. ESRI JSON symbols must be entered",
+    "pointMarker": null,
+    "lineSymbol": null,
+    "polygonSymbol": null
+  },
+  "labels": [{
+      "id": 0,
+      "es": "Ir a seleccionados",
+      "en": "Go to selected"
+    },
+    {
+      "id": 1,
+      "es": "Descargar todo",
+      "en": "Download all"
+    },
+    {
+      "id": 2,
+      "es": "Descargar seleccionados",
+      "en": "Download selected"
+    },
+    {
+      "id": 3,
+      "es": "Descargar filtrados",
+      "en": "Download filtered"
+    }
+    ,
+    {
+      "id": 4,
+      "es": "No hay elementos seleccionados",
+      "en": "No feature selected"
+    },
+    {
+        "id": 5,
+        "es": "Ir a filtrados",
+        "en": "Go to filtered"
+      },
+      {
+        "id": 6,
+        "es": "No hay elementos filtrados",
+        "en": "No feature filtered"
+      }
+
+  ]
+
+
+}

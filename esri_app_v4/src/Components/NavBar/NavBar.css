@@ -1,0 +1,129 @@
+.navbar-ieo .navbar-toggle .icon-bar
+{
+  background-color: 1a93da !important;
+}
+
+#ieoNavbar ul li a[aria-expanded="true"]{
+  background: white !important;
+}
+
+
+#ieoNavbar ul li a[aria-expanded="true"]::before{
+  content: none;
+}
+
+#ieoNavbar ul li a[aria-expanded="false"]::before{
+  content: none;
+}
+
+
+
+#ieoNavbar ul li ul li a {
+  background-color:white;
+  display: inline;
+}
+
+#ieoNavbar ul li ul li a span {
+  padding: 5px;
+  margin-left:-23px;
+}
+
+
+#ieoNavbar ul li ul li a:hover {
+  background-color:#1a93da;
+}
+.navbar-ieo {
+  background-color:white !important;
+  border-color:#1a93da !important;
+  color: 1a93da !important;
+  margin-bottom:0px !important;
+  border-radius: 0px !important;
+  padding: 10px 10px;
+}
+.navbar-ieo a {
+  color: #1a93da !important;
+}
+
+#logo {
+  height:50px;
+  width:50px;
+  margin-right:5px;
+}
+
+#logoIDEO{
+  height: 50px;
+}
+
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: black !important;
+  white-space: nowrap;
+}
+
+.navbar-ieo .navbar-nav > .active > a, .navbar-ieo .navbar-nav > .active > a:hover, .navbar-ieo .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #193b5e !important;
+}
+
+
+.navbar-ieo .navbar-nav > .open > a, .navbar-ieo .navbar-nav > .open > a:hover, .navbar-ieo .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #193b5e !important;
+}
+
+.navbar-div-title {
+  float: right;
+  margin-top: -5px !important;
+  margin-left: 10px;
+}
+
+.navbar-subtitle {
+  font-size: 16px;
+  margin: 0px !important;
+  font-style: oblique;
+}
+
+.navbar-title {
+  margin-bottom: 0px;
+}
+
+.logoSecundario{
+  display:none;
+}
+
+@media (max-width: 768px) {
+
+  .navbar{
+    padding:5px !important;
+  }
+  .navbar-title{
+    margin:0px;
+    padding:3px;
+    font-size: 0.7em;
+  }
+
+  .navbar div .navbar-header {
+
+  }
+
+  .logoSecundario{
+    display:block;
+    height: 80%;
+  }
+
+
+  #logoIDEO{
+    display: none;
+  }
+
+  .navbar-brand{
+
+    font-size:1em !important;
+  }
+
+}

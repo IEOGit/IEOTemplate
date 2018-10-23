@@ -1,0 +1,38 @@
+{
+  "definition": {
+     "layers": true,
+     "onviewloaded": true,
+     "id": "widget_smartmapping",
+     "custom":{
+       "inPanel": true,
+       "icon": "esri-icon-maps",
+       "title": {"es": "Simbolización avanzada","en": "Smart Mapping"}
+     },
+     "comments": ""
+   },
+  "labels":[{
+    "id": 0,
+    "es": "Seleccionar capa",
+    "en": "Select layer"
+  },
+  {
+    "id": 1,
+    "es": "Seleccionar campo",
+    "en": "Select field"
+  },
+  {
+    "id": 2,
+    "es": "Aplicar simbología",
+    "en": "Apply symbology"
+  },
+  {
+    "id": 3,
+    "es": "Seleccionar Tema",
+    "en": "Select Theme"
+  },
+  {
+    "id": 4,
+    "es": "Seleccionar campo normalización",
+    "en": "Select normalization field"
+  }]
+}

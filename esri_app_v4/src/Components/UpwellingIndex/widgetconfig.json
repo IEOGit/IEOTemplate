@@ -1,0 +1,180 @@
+{
+  "definition":{
+    "onviewloaded": true,
+    "layers": false,
+    "id":"widget_upwellingIndex",
+    "custom":{
+      "inPanel": true,
+      "title":"Upwelling Index",
+      "icon":"fa fa-anchor"
+    },
+    "comments": "if intoc is false, mountingnode must be entered"
+  },
+  "UpwellingIndexConfig": {
+    "stations" : [
+      {
+        "id": "HBilbao",
+        "name": "FNMOC Bilbao"
+      },
+      {
+        "id": "BBilbao",
+        "name": "Buoy Bilbao"
+      },
+      {
+        "id": "BSantander",
+        "name": "Buoy Santander"
+      },
+      {
+        "id": "MCantabrico",
+        "name": "Meteogalicia Cantábrico Central"
+      },
+      {
+        "id": "HPenas",
+        "name": "FNMOC Peñas"
+      },
+      {
+        "id": "BPenas",
+        "name": "Buoy Peñas"
+      },
+      {
+        "id": "BEstaca",
+        "name": "Buoy Estaca"
+      },
+      {
+        "id": "MAltas",
+        "name": "Meteogalicia Rías Altas"
+      },
+      {
+        "id": "HAltas",
+        "name": "FNMOC Rías Altas"
+      },
+      {
+        "id": "BVilano",
+        "name": "Buoy Vilano"
+      },
+      {
+        "id": "HFNMOC",
+        "name": "FNMOC Historical"
+      },
+      {
+        "id": "HMeteogalicia",
+        "name": "Meteogalicia Historical"
+      },
+      {
+        "id": "MBaixas",
+        "name": "Meteogalicia Rías Baixas"
+      },
+      {
+        "id": "HBaixas",
+        "name": "FNMOC Baixas"
+      },
+      {
+        "id": "BSilleiro",
+        "name": "Buoy Silleiro"
+      },
+      {
+        "id": "MOporto",
+        "name": "Meteogalicia Oporto"
+      },
+      {
+        "id": "HAveiro",
+        "name": "FNMOC Aveiro"
+      },
+      {
+        "id": "MFigueira",
+        "name": "Meteogalicia Figueira"
+      },
+      {
+        "id": "HFigueira",
+        "name": "FNMOC Figueira da Foz"
+      },
+      {
+        "id": "MCRoca",
+        "name": "Meteogalicia Roca Cape"
+      },
+      {
+        "id": "HCRoca",
+        "name": "FNMOC Cabo Roca"
+      },
+      {
+        "id": "HSines",
+        "name": "FNMOC Sines"
+      },
+      {
+        "id": "MCVicente",
+        "name": "Meteogalicia San Vicente Cape"
+      },
+      {
+        "id": "HVicente",
+        "name": "FNMOC Cabo Vicente"
+      },
+      {
+        "id": "HCadiz",
+        "name": "FNMOC Cadiz"
+      },
+      {
+        "id": "HAlgarve",
+        "name": "FNMOC Algarve"
+      },
+      {
+        "id": "HCasablanca",
+        "name": "FNMOC Casablanca"
+      },
+      {
+        "id": "HCanarias",
+        "name": "FNMOC Canarias"
+      },
+      {
+        "id": "HMauritania",
+        "name": "FNMOC Mauritania"
+      },
+      {
+        "id": "HDakar",
+        "name": "FNMOC Dakar"
+      },
+      {
+        "id": "HGuineas",
+        "name": "FNMOC Guineas"
+      }
+    ],
+    "colorSelected": ["255,0,0,0.96", "0,255,0,0.96", "0,0,255,0.96", "242,255,0,0.96", "255,128,0,0.96", "14,84,14,0.96", "170,0,255,0.96", "255,0,208,0.96"]
+  },
+  "labels": [
+    {
+      "id": 0,
+      "es": "Seleccionar estación",
+      "en": "Select a source"
+    },
+    {
+      "id": 1,
+      "es": "Seleccionar año",
+      "en": "Select year"
+    },
+    {
+      "id": 2,
+      "es": "Añadir serie",
+      "en": "Insert serie"
+    },
+    {
+      "id": 3,
+      "es": "Eliminar serie",
+      "en": "Remove serie"
+    },
+    {
+      "id": 4,
+      "es": "Varios años",
+      "en": "Several years"
+    },
+    {
+      "id": 5,
+      "es": "Seleccionar año comienzo",
+      "en": "Select start year"
+    },
+    {
+      "id": 6,
+      "es": "Seleccionar año final",
+      "en": "Several end year"
+    }
+  ],
+  "comments": ""
+}

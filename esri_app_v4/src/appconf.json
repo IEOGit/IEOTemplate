@@ -1,0 +1,28 @@
+{
+  "ieoappid": 1,
+  "widgets": ["LayerList", "Bookmarks", "MapCoords", "IntroPanel", "LegendComponent", "DataTablePanel", "MeasureTool", "InfoTool", "AddData", "ViewEsri3D", "SmartMapping", "PrintTool","HeatMapLayers", "UpwellingIndex"],
+  "title":
+    {
+      "es": "Instituto Español de Oceanografía",
+      "en": "Spanish Institute of Oceanography"
+    },
+  "subtitle":{
+    "es": "Información Marina",
+    "en": "Maritime Information"
+  },
+  "proxyurl": "http://ideo-manager.ieo.es/proxy/DotNet/proxy.ashx?",
+  "controlersurl": "http://ideo-manager.ieo.es/IEOcontrolers",
+  "controlersurl_prod": "http://ideo-manager.ieo.es/IEOcontrolers",
+  "esriversion": {
+      "url": "https://js.arcgis.com/4.8"
+  },
+  "locales": [{
+      "locale": "es",
+      "label": "Español"
+    },
+    {
+      "locale": "en",
+      "label": "English"
+    }
+  ]
+}

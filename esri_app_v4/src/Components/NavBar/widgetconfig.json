@@ -1,0 +1,34 @@
+{
+  "resources": [{
+    "title": "Visor de El Hierro",
+    "link": "http://www.ideo-elhierro.ieo.es/"
+  }],
+  "labels": [
+    {
+      "id": 2,
+      "es": "Contacto",
+      "en": "Contact"
+    },
+    {
+      "id": 3,
+      "es": "Ingresar",
+      "en": "Login"
+    },
+    {
+      "id": 4,
+      "es": "Idioma",
+      "en": "Language"
+    },
+    {
+      "id": 5,
+      "es": "Otros recursos",
+      "en": "Other resources"
+    },
+    {
+      "id": 6,
+      "es": "Salir",
+      "en": "Log Out"
+    }
+
+  ]
+}

@@ -1,0 +1,20 @@
+#datatablesContent table {
+  width: 100%;
+  font-size: 12px !important;
+}
+
+#datatablesContent .odd{
+  background-color: #EFEFEF;
+}
+
+#datatablesContent .even {
+  background-color: #F7F8F8;
+}
+
+#datatablesContent .selected {
+  background-color: #acbad4;
+}
+#tablerow{
+
+  padding-top: 15px;
+}

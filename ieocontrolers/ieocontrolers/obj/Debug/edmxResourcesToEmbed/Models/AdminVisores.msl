@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Admin_visoresModelStoreContainer" CdmEntityContainer="Admin_visoresEntities">
+    <EntitySetMapping Name="Projects">
+      <EntityTypeMapping TypeName="Admin_visoresModel.Projects">
+        <MappingFragment StoreEntitySet="Projects">
+          <ScalarProperty Name="project" ColumnName="project" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="Admin_visoresModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="rol" ColumnName="rol" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_Prj_Role">
+      <EntityTypeMapping TypeName="Admin_visoresModel.User_Prj_Role">
+        <MappingFragment StoreEntitySet="User_Prj_Role">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_rol" ColumnName="id_rol" />
+          <ScalarProperty Name="id_project" ColumnName="id_project" />
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="widgets">
+      <EntityTypeMapping TypeName="Admin_visoresModel.widgets">
+        <MappingFragment StoreEntitySet="widgets">
+          <ScalarProperty Name="min_role" ColumnName="min_role" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Admin_visoresModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="is_sa" ColumnName="is_sa" />
+          <ScalarProperty Name="usertoken" ColumnName="usertoken" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

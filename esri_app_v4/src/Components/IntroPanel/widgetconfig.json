@@ -1,0 +1,23 @@
+{
+  "definition":{
+    "layers": false,
+    "onviewloaded": false,
+    "id":"widget_intropanel",
+    "custom":{
+      "inPanel": false,
+      "title":"Intro"
+    },
+    "comments": ""
+  },
+  "Tabs": [
+    {
+        "title":"Condiciones",
+        "htmlContentFile":"tab1.jsx"
+    },
+    {
+        "title":"Acerca de",
+        "htmlContentFile":"tab2.jsx"
+    }
+  ],
+  "activeTab": 1
+}

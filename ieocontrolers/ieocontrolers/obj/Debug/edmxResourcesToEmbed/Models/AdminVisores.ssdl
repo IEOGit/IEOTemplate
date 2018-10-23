@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Admin_visoresModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Projects">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="project" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="rol" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User_Prj_Role">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id_user" Type="int" Nullable="false" />
+    <Property Name="id_project" Type="int" Nullable="false" />
+    <Property Name="id_rol" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="usertoken" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="is_sa" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="widgets">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="min_role" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Permits_Projects">
+    <End Role="Projects" Type="Self.Projects" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="User_Prj_Role" Type="Self.User_Prj_Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User_Prj_Role">
+        <PropertyRef Name="id_project" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Permits_Roles">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="User_Prj_Role" Type="Self.User_Prj_Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User_Prj_Role">
+        <PropertyRef Name="id_rol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Permits_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="User_Prj_Role" Type="Self.User_Prj_Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User_Prj_Role">
+        <PropertyRef Name="id_user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_widgets_Roles">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+    <End Role="widgets" Type="Self.widgets" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="widgets">
+        <PropertyRef Name="min_role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Admin_visoresModelStoreContainer">
+    <EntitySet Name="Projects" EntityType="Self.Projects" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User_Prj_Role" EntityType="Self.User_Prj_Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="widgets" EntityType="Self.widgets" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Permits_Projects" Association="Self.FK_Permits_Projects">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="User_Prj_Role" EntitySet="User_Prj_Role" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Permits_Roles" Association="Self.FK_Permits_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="User_Prj_Role" EntitySet="User_Prj_Role" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Permits_Users" Association="Self.FK_Permits_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="User_Prj_Role" EntitySet="User_Prj_Role" />
+    </AssociationSet>
+    <AssociationSet Name="FK_widgets_Roles" Association="Self.FK_widgets_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="widgets" EntitySet="widgets" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

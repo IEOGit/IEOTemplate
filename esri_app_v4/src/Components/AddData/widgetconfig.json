@@ -1,0 +1,70 @@
+{
+  "definition":{
+    "layers": false,
+    "onviewloaded": true,
+    "id":"widget_adddata",
+    "custom":{
+      "inPanel": true,
+      "title":{"es": "Añadir datos",
+      "en": "Add data"},
+      "icon":"esri-icon-share2"
+    },
+    "comments": ""
+  },
+  "portal": "http://barretosm.md.ieo.es/portal/",
+
+  "labels":[{
+    "id": 0,
+    "es": "Examinar",
+    "en": "Browse"
+    },
+    {
+      "id": 1,
+      "es": "Se utilizará el carácter coma como valor por defecto",
+      "en": "Comma will be used by default"
+    },
+    {
+      "id": 2,
+      "es": "Separador de campos: ",
+      "en": "Field delimiter: "
+    },
+    {
+      "id": 3,
+      "es": "Arrastrar y Soltar aquí",
+      "en": "Drag & Drop here"
+    },
+    {
+      "id": 4,
+      "es": "CSV",
+      "en": "CSV"
+    },
+    {
+      "id": 5,
+      "es": "WMS",
+      "en": "WMS"
+    },
+    {
+      "id": 6,
+      "es": "Cargar",
+      "en": "Load"
+    },
+    {
+      "id":7,
+      "es": "Importar CSV",
+      "en": "CSV Import"
+    },
+    {
+      "id":8,
+      "es": "SHP",
+      "en": "SHP"
+    },
+    {
+      "id":9,
+      "es": "Shapefile añadido correctamente",
+      "en": "Shapefile added"
+
+    }
+
+
+  ]
+}

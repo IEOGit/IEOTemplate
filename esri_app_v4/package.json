@@ -1,0 +1,45 @@
+{
+  "name": "esri_app_v4",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "datatables.net": "1.10.16",
+    "datatables.net-bs": "1.10.16",
+    "esri-loader": "1.5.3",
+    "font-awesome": "4.7.0",
+    "grunt-cli": "^1.3.1",
+    "grunt-sync": "^0.8.0",
+    "heatmapjs": "2.0.2",
+    "highcharts": "6.0.4",
+    "jquery": "3.2.1",
+    "jquery-resizable": "1.0.6",
+    "jquery-ui": "1.12.1",
+    "jquery-ui-touch-punch": "0.2.3",
+    "js-cookie": "2.2.0",
+    "moment": "2.20.1",
+    "moment-timezone": "0.5.14",
+    "pubsub-js": "1.6.0",
+    "react": "16.2.0",
+    "react-bootstrap": "0.31.5",
+    "react-color": "^2.14.1",
+    "react-dom": "16.2.0",
+    "react-moment": "0.7.0",
+    "react-router-dom": "4.2.2",
+    "react-scripts": "^1.1.5",
+    "react-select2-wrapper": "1.0.4-beta6",
+    "react-sidebar": "2.3.2",
+    "select2": "4.0.6-rc.1",
+    "slick-carousel": "1.8.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}

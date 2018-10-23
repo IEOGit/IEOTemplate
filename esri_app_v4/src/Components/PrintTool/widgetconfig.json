@@ -1,0 +1,19 @@
+{
+  "definition":{
+    "layers": true,
+    "onviewloaded": true,
+    "id": "widget_print",
+    "custom":{
+      "inPanel": true,
+      "title": {
+          "es": "Imprimir",
+          "en": "Print"
+      },
+        "icon": "fa fa-print"
+    }
+  },
+  "printServiceUrl": "http://barretosm.md.ieo.es/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+  "locales":[
+  ],
+  "comments": ""
+}

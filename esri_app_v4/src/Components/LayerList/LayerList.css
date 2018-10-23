@@ -1,0 +1,35 @@
+.esri-layer-list__item-toggle-icon {
+  margin-top: 10px;
+}
+
+#layerlist {
+  padding: 10px 10px;
+}
+
+#widgetContent_widget_gestor_capas {
+  overflow-y: auto;
+  max-height: 600px;
+}
+
+.first-radio-inline {
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+
+.esri-layer-list__item-actions {
+
+    background-color: white;
+    color: #333;
+
+}
+
+.esri-layer-list__item-action:hover{
+  background-color: #1a93da !important;
+  color:white;
+}
+
+.esri-layer-list__item-action{
+  background-color: white !important;
+  color: #333;
+}

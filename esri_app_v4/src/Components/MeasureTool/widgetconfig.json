@@ -1,0 +1,76 @@
+{
+  "definition":{
+    "layers": false,
+    "onviewloaded": true,
+    "id": "widget_measure",
+    "custom":{
+      "inPanel": true,
+      "title": {"es": "Medir","en": "Measure"},
+      "icon": "glyphicon glyphicon-resize-horizontal"
+    },
+    "comments": ""
+  },
+  "lineSymbol": {
+        "type": "simple-line",
+        "color": [4, 90, 141],
+        "width": 4,
+        "cap": "round",
+        "join": "round"
+      },
+    "polygonSymbol":{
+      "type": "simple-fill",
+      "color": [178, 102, 234, 0.8],
+      "style": "solid",
+      "outline": {
+        "color": [4, 90, 141],
+        "width": 2
+      }
+    },
+    "labels": [
+      {
+        "id": 0,
+        "es": "Medir",
+        "en": "Measure"
+      },
+      {
+        "id": 1,
+        "es": "Limpiar",
+        "en": "Clean"
+      },{
+        "id": 3,
+        "es": "Polígono",
+        "en": "Polygon"
+      },
+      {
+        "id": 4,
+        "es": "Línea",
+        "en": "Line"
+      },
+      {
+        "id": 5,
+        "es": "Geodésica",
+        "en": "Geodesic"
+      },
+      {
+        "id": 6,
+        "es": "Plana",
+        "en": "Plannar"
+      },
+      {
+        "id": 7,
+        "es": "Geometría",
+        "en": "Geometry"
+      },
+      {
+        "id": 8,
+        "es": "Tipo medición",
+        "en": "Measure type"
+      },
+      {
+        "id": 9,
+        "es": "Unidad",
+        "en": "Unit"
+      }
+
+    ]
+}

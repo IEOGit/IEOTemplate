@@ -1,0 +1,19 @@
+{
+  "definition":{
+    "layers": false,
+    "onviewloaded": true,
+    "id":"widget_mapcoords",
+    "custom":{
+      "inPanel": false,
+      "mountingnode":"coords",
+      "title":"Coordenadas del mapa"
+    },
+    "comments": ""
+  },
+
+  "decimals": 2,
+  "label_X": {"es":"Longitud", "en":"Longitude"},
+  "label_Y": {"es":"Latitud", "en":"Latitude"},
+  "color": "#2d2d2d",
+  "EPSG": "4326"
+}

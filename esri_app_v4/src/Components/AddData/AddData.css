@@ -1,0 +1,94 @@
+.AddDataDiv {
+  background-color: white;
+}
+
+.container{
+  width: 100%;
+}
+
+.btn-AddData {
+  position: relative;
+  top: 180px
+}
+
+.input-ModalForm, .input-AddDataCont {
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.label-AddDataCont {
+  font-size: 12px;
+  font-weight: normal !important;
+}
+
+.input-AddDataCont {
+  width: 30px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.row-ModalForm {
+  margin-top:10px;
+}
+
+.infoIconAddData {
+  float: left;
+  padding-right: 5px;
+}
+
+#addDataTabs ul li > a {
+    background: white !important;
+}
+
+#addDataTabs ul li.active > a {
+    color: #fff !important;
+    background: #193b5e !important;
+}
+
+#addDataTabs a[aria-expanded="true"]::before {
+	content: none !important;
+}
+
+#addDataTabs a[aria-expanded="false"]::before {
+	content: none !important;
+}
+
+#DragDropPanel {
+  background-color: #ededed;
+  height: 300px;
+  margin-top: 20px;
+  border: 2px dashed #bbb;
+}
+
+#DragDropPanel h5 {
+  position: relative;
+  top: 150px;
+  text-align: center;
+  line-height: 0.5;
+}
+
+#DragDropPanel span {
+  display: inline-block;
+  position: relative;
+}
+
+#DragDropPanel span:before,
+#DragDropPanel span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid black;
+  top: 0;
+  width: 60px;
+}
+
+#DragDropPanel span:before {
+  right: 100%;
+  margin-right: 5px;
+}
+
+#DragDropPanel span:after {
+  left: 100%;
+  margin-left: 5px;
+}

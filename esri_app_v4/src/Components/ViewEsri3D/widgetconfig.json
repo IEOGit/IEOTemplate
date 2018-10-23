@@ -1,0 +1,132 @@
+{
+  "definition":{
+    "onviewloaded": true,
+    "layers": false,
+    "id":"widget_view3d",
+    "custom":{
+      "inPanel": true,
+      "title":"3D",
+      "icon":"fa fa-cube"
+    },
+    "comments": "if intoc is false, mountingnode must be entered"
+  },
+  "groundlayers":[
+    {
+      "id": "medimdt",
+      "url": "http://barretosm.md.ieo.es/arcgis/rest/services/visorBase/dtm_webmedit_elevation/ImageServer",
+      "visible": true,
+      "title": "MDT Mediterraneo",
+      "zfactor":10
+    },
+    {
+      "id": "esritopobathy",
+      "url": "http://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/TopoBathy3D/ImageServer",
+      "visible": false,
+      "title": "Esri TopoBathy3D"
+    }
+  ],
+  "threeDLayers":[
+    {
+
+        "name":"Contaminants in Sediments Distribution LBMD",
+        "id": "contaminants_sediments_LBMD",
+        "url":"http://barretosm.md.ieo.es/arcgis/rest/services/MSFD/IEO_MSFD_DMLB/MapServer/0"
+
+
+    },
+    {
+
+        "name":"Contaminants in Red Mullet Distribution LBMD",
+        "id": "contaminants_redmullet_LBMD",
+        "url":"http://barretosm.md.ieo.es/arcgis/rest/services/MSFD/IEO_MSFD_DMLB/MapServer/1"
+
+
+    },
+    {
+
+        "name":"Contaminants in Mussel Distribution LBMD",
+        "id": "contaminants_redmussel_LBMD",
+        "url":"http://barretosm.md.ieo.es/arcgis/rest/services/MSFD/IEO_MSFD_DMLB/MapServer/2"
+
+      }
+  
+  ],
+  "labels": [
+    {
+      "id": 0,
+      "es": "Visor 3D",
+      "en": "3D Viewer"
+    },
+    {
+      "id": 1,
+      "es": "Capas de elevación",
+      "en": "Ground Layers"
+    },
+    {
+      "id": 2,
+      "es": "Capas 3D",
+      "en": "3D Layers"
+    },
+    {
+      "id": 4,
+      "es": "Campo elevación",
+      "en": "Elevation field"
+    },
+    {
+      "id": 5,
+      "es": "Valor mínimo",
+      "en": "Minimum value"
+    },
+    {
+      "id": 6,
+      "es": "Valor máximo",
+      "en": "Maximum value"
+    },
+    {
+      "id": 7,
+      "es": "Símbolo 3D",
+      "en": "3D symbol"
+    },
+    {
+      "id": 8,
+      "es": "Anchura",
+      "en": "Width"
+    },
+    {
+      "id": 9,
+      "es": "Color mínimo",
+      "en": "Minumum Color"
+    },
+    {
+      "id": 10,
+      "es": "Color máximo",
+      "en": "Maximum Color"
+    },
+    {
+      "id": 11,
+      "es": "Altura mínima",
+      "en": "Minimum Height"
+    },
+    {
+      "id": 12,
+      "es": "Altura máxima",
+      "en": "Maximum Height"
+    },
+    {
+      "id": 13,
+      "es": "Mostrar",
+      "en": "Show"
+    },
+    {
+      "id": 14,
+      "es": "Ir A",
+      "en": "Go To"
+    },
+    {
+      "id": 15,
+      "es": "Calcular",
+      "en": "Calculate"
+    }
+  ],
+  "comments": "3D layers must be FeatureLayers"
+}

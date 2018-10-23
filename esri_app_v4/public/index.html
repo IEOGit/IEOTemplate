@@ -1,0 +1,39 @@
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <meta name="author" content="IEO">
+  <link href="favicon.ico" rel="Shortcut Icon" />
+
+
+  <title>IEO GIS Template</title>
+</head>
+
+<body>
+  <noscript>
+  You need to enable JavaScript to run this app.
+</noscript>
+  <div id="root"></div>
+</body>
+<script type="text/javascript">
+  window.dojoConfig = {
+    async: true,
+    has: {
+      "esri-featurelayer-webgl": 1
+    },
+    packages: [{
+      name: "react",
+      location: "https://unpkg.com/react@16.4.2/umd/",
+      main: "react.production.min"
+    }, {
+      name: "react-dom",
+      location: "https://unpkg.com/react-dom@16.4.2/umd/",
+      main: "react-dom.production.min"
+    }]
+  };
+</script>
+
+</html>

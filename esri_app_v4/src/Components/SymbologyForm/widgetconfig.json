@@ -1,0 +1,161 @@
+{
+  "initvalues":{
+    "stylePoint": "circle",
+    "outline": {
+      "styleLine": "solid",
+      "cap": "butt",
+      "join": "miter",
+      "miterLimit": 10,
+      "width": 0.75,
+      "lineColor": [0,0,0,1]
+    },
+    "angleValue": 0,
+    "size": 12,
+    "stylePolygon": "solid",
+    "xoffset": 0,
+    "yoffset": 0,
+    "fillColor": [255,255,255,1],
+    "url": "https://goo.gl/58GeAx",
+    "width": 240,
+    "height": 240,
+    "xscale": 1,
+    "yscale": 1
+  },
+  "labels":[{
+    "id": 0,
+    "es": "Seleccionar tipo simbolo",
+    "en": "Type symbol selector"
+    },
+    {
+      "id": 1,
+      "es": "Aplicar simbolo",
+      "en": "Apply symbol"
+    },
+    {
+      "id": 2,
+      "es": "Estilo",
+      "en": "Style"
+    },
+    {
+      "id": 3,
+      "es": "Linea exterior",
+      "en": "Outline"
+    },
+    {
+      "id": 4,
+      "es": "Ángulo",
+      "en": "Angle"
+    },
+    {
+      "id": 5,
+      "es": "Tamaño",
+      "en": "Size"
+    },
+    {
+      "id": 6,
+      "es": "Xoffset",
+      "en": "Xoffset"
+    },
+    {
+      "id": 7,
+      "es": "Yoffset",
+      "en": "Yoffset"
+    },
+    {
+      "id": 8,
+      "es": "Color",
+      "en": "Color"
+    },
+    {
+      "id": 9,
+      "es": "URL",
+      "en": "URL"
+    },
+    {
+      "id": 10,
+      "es": "Ancho",
+      "en": "Width"
+    },
+    {
+      "id": 11,
+      "es": "Alto",
+      "en": "Heigth"
+    },
+    {
+      "id": 12,
+      "es": "Cap",
+      "en": "Cap"
+    },
+    {
+      "id": 13,
+      "es": "Join",
+      "en": "Join"
+    },
+    {
+      "id": 14,
+      "es": "miterLimit",
+      "en": "miterLimit"
+    },
+    {
+      "id": 15,
+      "es": "Escala X",
+      "en": "Xscale"
+    },
+    {
+      "id": 16,
+      "es": "Escala Y",
+      "en": "Yscale"
+    },
+    {
+      "id": 17,
+      "es": "Colores continuos",
+      "en": "Continuous colors"
+    },
+    {
+      "id": 18,
+      "es": "Seleccionar colores",
+      "en": "Select colors"
+    },
+    {
+      "id": 19,
+      "es": "Valor mínimo",
+      "en": "Min value"
+    },
+    {
+      "id": 20,
+      "es": "Valor máximo",
+      "en": "Max value"
+    },
+    {
+      "id": 21,
+      "es": "Seleccionar campo",
+      "en": "Select field"
+    },
+    {
+      "id": 22,
+      "es": "Seleccionar colores",
+      "en": "Select colors"
+    },
+    {
+      "id": 23,
+      "es": "Colores",
+      "en": "Colors"
+    },
+    {
+      "id": 24,
+      "es": "Simbolización por clases",
+      "en": "Render by class"
+    },
+    {
+      "id": 25,
+      "es": "Simbolización avanzada por campo",
+      "en": "Avanced render by field"
+    }
+    ,
+    {
+      "id": 26,
+      "es": "No seleccionado",
+      "en": "No selected"
+    }
+  ]
+}
